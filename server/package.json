@@ -1,0 +1,29 @@
+{
+    "name": "Travel_Log",
+    "description": "App for travel log",
+    "authors": "Fahad hayat. <fahadhayat@outlook.com>",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "license": "MIT",
+    "scripts": {
+        "start-client": "cd ../client && yarn install && yarn start",
+        "start": "concurrently \"yarn install\" \"node src/index.js\" \"yarn start-client\"",
+        "dev": "nodemon src/index.js",
+        "lint": "eslint src/"
+    },
+    "dependencies": {
+        "concurrently": "^6.1.0",
+        "cors": "^2.8.5",
+        "dotenv": "^9.0.0",
+        "express": "^4.17.1",
+        "helmet": "4.6.0",
+        "mongoose": "^5.12.7",
+        "morgan": "1.10.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.25.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "nodemon": "2.0.7"
+    }
+}
